@@ -71,7 +71,7 @@ function startApp() {
             const { strMeal, strMealThumb, idMeal } = meal;
 
             const mealContainer = document.createElement('DIV');
-            mealContainer.classList.add('col-md-3');
+            mealContainer.classList.add('col-sm-6', 'col-md-4', 'col-lg-3');
 
             const mealCard = document.createElement('DIV');
             mealCard.classList.add('card', 'mb-4');
@@ -84,7 +84,7 @@ function startApp() {
             const mealCardBody = document.createElement('DIV');
             mealCardBody.classList.add('card-body');
 
-            const mealHeading = document.createElement('H3');
+            const mealHeading = document.createElement('H4');
             mealHeading.classList.add('card-title', 'mb-3');
             mealHeading.textContent = strMeal ?? meal.title;
 
